@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 1fr 1fr;
+    grid-template-rows: 2f 3fr 3fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header header"
+        "aside section1 section1 section1"
+        "aside section2 section3 section3"
+        "aside section2 section4 section5"
+        "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: yellow;
+}
+
+aside {
+    grid-area: aside;
+    background-color: orange;
+}
+
+.section1 {
+    grid-area: section1;
+    background-color: green;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: blue;
+}
+
+.section3 {
+    grid-area: section3;
+    background-color: aqua;
+}
+
+.section4 {
+    grid-area: section4;
+    background-color: salmon;
+}
+
+.section5 {
+    grid-area: section5;
+    background-color: rosybrown;
+}
+
+footer {
+    grid-area: footer;
+    background-color: red;
+}
