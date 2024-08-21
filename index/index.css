@@ -1,11 +1,13 @@
 body {
     margin: 0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
 }
 
 main {
     display: grid;
     grid-template-columns: 0.5fr 4fr 1fr 1fr;
-    grid-template-rows: 2f 3fr 3fr 1fr 1fr;
+    grid-template-rows: 650px 3fr 3fr 1fr 1fr;
     grid-template-areas: 
         "header header header header"
         "aside section1 section1 section1"
@@ -16,7 +18,25 @@ main {
 
 header {
     grid-area: header;
-    background-color: yellow;
+    background-color: rgb(255, 153, 0);
+    background-image: url('../assets/img/blasenhaus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -30px;
+    /*
+    background-size: 100%;
+    */
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.topbar {
+    display: flex;
+}
+
+.topbar img {
+    max-width: 20%;
+    min-width: 20%;
 }
 
 aside {
@@ -51,5 +71,26 @@ aside {
 
 footer {
     grid-area: footer;
-    background-color: red;
+    color: white;
+    text-align: center;
+    background-color: #002379;
+    padding-bottom: 1%;
+}
+
+footer .social {
+    font-weight: 800;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    height: 50px;
+    padding-bottom: 1%;
+}
+
+.icons img {
+    justify-content: center;
+    max-width: 40px;
+    max-height: auto;
 }
