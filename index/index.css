@@ -2,12 +2,13 @@ body {
     margin: 0;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
+    background-color: #f9f2ee;
 }
 
 main {
     display: grid;
-    grid-template-columns: 0.5fr 4fr 1fr 1fr;
-    grid-template-rows: 650px 3fr 3fr 1fr 1fr;
+    grid-template-columns: 0.7fr 4fr 1fr 1fr;
+    grid-template-rows: 710px 3fr 1fr 1fr 0.5fr;
     grid-template-areas: 
         "header header header header"
         "aside section1 section1 section1"
@@ -18,7 +19,7 @@ main {
 
 header {
     grid-area: header;
-    background-color: rgb(255, 153, 0);
+    background-color: #FF6200;
     background-image: url('../assets/img/blasenhaus.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,40 +42,118 @@ header {
 
 aside {
     grid-area: aside;
-    background-color: orange;
+    background-color: #FF6200;
 }
 
 .section1 {
     grid-area: section1;
-    background-color: green;
+    padding-bottom: 2%;
+}
+
+.section1 h1 {
+    padding-left: 3%;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card{
+    max-width: 25%;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img{
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .section2 {
     grid-area: section2;
-    background-color: blue;
+    /*background-color: #ffd0b2;*/
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.section1 h1, .section2 h1, .section3 h1 {
+    font-size: 3em;
+    font-weight: 800;
+    font-family: "Lexend", sans-serif;
+    color: #FF6200;
+}
+
+.section2 p {
+    padding-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 50%;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd0b2;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.card img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.card h2 {
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.card p{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.card p, .card h2, .card img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .section3 {
     grid-area: section3;
-    background-color: aqua;
+    padding-left: 5%;
+    padding-right: 20%;
 }
 
 .section4 {
     grid-area: section4;
-    background-color: salmon;
 }
 
 .section5 {
     grid-area: section5;
-    background-color: rosybrown;
 }
 
 footer {
     grid-area: footer;
     color: white;
     text-align: center;
-    background-color: #002379;
+    background-color: black;
     padding-bottom: 1%;
+    padding-top: 1%;
 }
 
 footer .social {
