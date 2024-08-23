@@ -10,7 +10,7 @@ body {
 main {
     height: 90vh;
     position: relative;
-    color: #FF6200;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,10 @@ main {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+main h1{
+    color: #FF6200;
 }
 
 .container {
@@ -99,7 +103,7 @@ label, input, textarea, button {
   }
 
 button{
-    background-color: black;
+    background-color: #FF6200;
     font-family: "Lexend", sans-serif;
     font-weight: 500;
     color:#f9f2ee;

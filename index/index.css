@@ -40,7 +40,7 @@ main {
 
 .btn-container {
     display: flex;
-    gap: 35px;
+    gap: 50px;
     padding-right: 20px;
 }
 
@@ -134,6 +134,36 @@ a:active { text-decoration: none; }
     border-radius: 10px;
 }
 
+.price-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-btn p{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.price-btn span{
+    font-size: 20px;
+}
+
+.price-btn button{
+    background-color: #FF6200;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 10px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100px;
+}
+
 .section2 {
     grid-area: section2;
     /*background-color: #ffd0b2;*/
@@ -145,7 +175,7 @@ a:active { text-decoration: none; }
     font-size: 3em;
     font-weight: 900;
     font-family: "Lexend", sans-serif;
-    color: #FF6200;
+    color: black;
 }
 
 .section2 p {
