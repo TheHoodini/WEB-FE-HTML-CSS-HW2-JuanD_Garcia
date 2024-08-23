@@ -17,6 +17,53 @@ main {
         "footer footer footer footer";
 }
 
+
+
+.topbar {
+    padding-top: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.topbar.scrolled {
+    background-color: #FF6200;
+}
+
+.topbar img {
+    width: 300px;
+    padding-left: 20px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 35px;
+    padding-right: 20px;
+}
+
+.btn-container button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 16px;
+    padding: 10px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100px;
+}
+
+.btn-container img{
+    width: 30px;
+    margin-bottom: 25px;
+}
+
+
+
 header {
     grid-area: header;
     background-color: #FF6200;
@@ -31,19 +78,34 @@ header {
     padding-top: 1%;
 }
 
-.topbar {
-    display: flex;
-}
-
-.topbar img {
-    max-width: 20%;
-    min-width: 20%;
-}
-
 aside {
     grid-area: aside;
     background-color: #FF6200;
 }
+
+ul{
+    list-style-type: none;
+    padding-left: 10px;
+    text-align: center;
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 
 .section1 {
     grid-area: section1;
