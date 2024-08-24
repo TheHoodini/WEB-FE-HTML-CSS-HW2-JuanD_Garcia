@@ -95,21 +95,12 @@ li {
     color: white;
 }
 
-a:link {
+a:link, a:visited {
     text-decoration: none;
     color: white;
 }
 
-a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:active {
+a:hover, a:active {
     text-decoration: none;
 }
 
@@ -236,8 +227,8 @@ a:active {
 
 .section3 {
     grid-area: section3;
-    padding-left: 5%;
-    padding-right: 20%;
+    padding-left: 3%;
+    padding-right: 10%;
 }
 
 .section3 img {
