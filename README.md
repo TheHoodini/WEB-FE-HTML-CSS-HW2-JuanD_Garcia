@@ -1,6 +1,10 @@
-﻿# Blasenhaus Soda Brand Website
+<div align="center">
+  <img src="/assets/svg/blasenhaus-w.svg" alt="Blasenhaus Logo" width="400"/>
+</div>
+ 
+ # Blasenhaus Soda Brand Website
 
-Welcome to the official Blasenhaus Soda Brand website project! This site is designed to showcase its major salling point, juice-flavored sodas, deeply inspired by the timeless Bauhaus aesthetic.
+Welcome to the Blasenhaus Soda Brand website project! This site is designed to showcase its major selling point, juice-flavored sodas, deeply inspired by the timeless Bauhaus aesthetic.
 
 ## Project Overview
 
